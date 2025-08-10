@@ -2,7 +2,7 @@
 #include <cstdlib>
 #include "ret_et_helloworld.h"
 #include "ret_tid_helloworld.h"
-#include "ret_practice.h"
+#include "performance_analysis.h"
 
 int fn_mnudrvprg_020_runtime_environment_routines() {
 	int choice;
@@ -38,7 +38,7 @@ int fn_mnudrvprg_020_runtime_environment_routines() {
 			break;
 		}
 		case 5: {
-			fn_practice1();
+			fn_performance_analysis();
 			break;
 		}
 		default:

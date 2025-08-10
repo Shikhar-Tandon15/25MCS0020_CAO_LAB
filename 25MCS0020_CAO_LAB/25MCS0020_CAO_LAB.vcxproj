@@ -139,7 +139,7 @@
     <ClInclude Include="mnudrvprg_030_for_worsharing_construct.h" />
     <ClInclude Include="mnudrvprg_for_rte_routines.h" />
     <ClInclude Include="ret_et_helloworld.h" />
-    <ClInclude Include="ret_practice.h" />
+    <ClInclude Include="performance_analysis.h" />
     <ClInclude Include="ret_tid_helloworld.h" />
     <ClInclude Include="run_time_environment_routines.h" />
   </ItemGroup>

@@ -26,7 +26,7 @@
     <ClInclude Include="ret_tid_helloworld.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ret_practice.h">
+    <ClInclude Include="performance_analysis.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="run_time_environment_routines.h">

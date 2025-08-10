@@ -42,7 +42,7 @@ void fn_displayResults(int square[]) {
 		printf("square[%d] = %d\n", i, square[i]);
 	}
 }
-void speedup_efficiency() {
+void fn_arr_performance_analysis() {
 	
 	double speedup, efficiency;
 	speedup = ETser / ETper;
@@ -57,7 +57,7 @@ int fn_num_square() {
 	fn_initializeArray(a);
 	fn_computeSquares_srl(a, square);
 	fn_computeSquares_prl(a, square);
-	speedup_efficiency();
+	fn_arr_performance_analysis();
 	fn_displayResults(square);
 	return 0;
 }

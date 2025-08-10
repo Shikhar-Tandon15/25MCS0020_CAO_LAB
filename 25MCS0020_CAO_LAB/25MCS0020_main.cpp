@@ -10,7 +10,7 @@ int main() {
 	//fn_mnudrvprg_020_runtime_environment_routines();
 	//fn_mnudrvprg_for_rte_routines();
 	//fn_mnudrvprg_030_for_worksharing_construct();
-	fn_wsc_sections_pp1_srl();
-	fn_wsc_sections_pp1_prl();
+	//fn_wsc_sections_pp1_srl();
+	//fn_wsc_sections_pp1_prl();
 	return 0;
 }

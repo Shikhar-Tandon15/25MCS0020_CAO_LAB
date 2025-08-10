@@ -1,7 +1,7 @@
 # include <stdio.h>
 #include <omp.h>
 
-void fn_practice1() {
+void fn_performance_analysis() {
 	double starts, ends;
 	starts= omp_get_wtime();
 
