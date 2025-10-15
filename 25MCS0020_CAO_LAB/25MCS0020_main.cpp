@@ -4,6 +4,7 @@
 #include "mnudrvprg_030_for_worsharing_construct.h"
 #include "mnudrvprg_for_rte_routines.h"
 #include "040_wsc_sections_pp1.h"
+#include "mnudrvprg_050_scheduling.h"
 
 int main() {
 	//fn_mnudrvprg_010_parallel_construct();
@@ -12,5 +13,6 @@ int main() {
 	//fn_mnudrvprg_030_for_worksharing_construct();
 	//fn_wsc_sections_pp1_srl();
 	//fn_wsc_sections_pp1_prl();
+	fn_mnudrvprg_050_scheduling();
 	return 0;
 }

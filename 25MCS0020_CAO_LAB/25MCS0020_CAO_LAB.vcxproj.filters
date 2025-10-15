@@ -59,5 +59,17 @@
     <ClInclude Include="040_wsc_sections_pp1.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="050_Scheduling_Static.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="050_Scheduling_Dynamic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="050_Scheduling_Guided.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mnudrvprg_050_scheduling.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

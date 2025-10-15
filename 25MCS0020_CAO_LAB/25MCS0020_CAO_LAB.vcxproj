@@ -133,10 +133,14 @@
     <ClInclude Include="031_wsc_for_num_square.h" />
     <ClInclude Include="040_calculator_function_pp1.h" />
     <ClInclude Include="040_wsc_sections_pp1.h" />
+    <ClInclude Include="050_Scheduling_Dynamic.h" />
+    <ClInclude Include="050_Scheduling_Guided.h" />
+    <ClInclude Include="050_Scheduling_Static.h" />
     <ClInclude Include="helloworld.h" />
     <ClInclude Include="mnudrvprg_010_parallel_construct.h" />
     <ClInclude Include="mnudrvprg_020_runtime_environment_routines.h" />
     <ClInclude Include="mnudrvprg_030_for_worsharing_construct.h" />
+    <ClInclude Include="mnudrvprg_050_scheduling.h" />
     <ClInclude Include="mnudrvprg_for_rte_routines.h" />
     <ClInclude Include="ret_et_helloworld.h" />
     <ClInclude Include="performance_analysis.h" />
