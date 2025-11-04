@@ -71,5 +71,29 @@
     <ClInclude Include="mnudrvprg_050_scheduling.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="060_Data_env_constructs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="00_colours.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="00_Cover_Screen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="040_card_game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="050_bakery_order_system.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="weather_data_analyser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="060_Data_env_critical.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="060_data_env_reduction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

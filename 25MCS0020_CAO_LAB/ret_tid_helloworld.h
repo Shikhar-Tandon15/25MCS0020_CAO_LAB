@@ -6,5 +6,5 @@ void fn_ret_tid_helloworld_srl() {
 }
 void fn_ret_tid_helloworld_prl() {
 #pragma omp parallel
-	printf("Hello world parallel printed by thread ID: %d\n ", omp_get_thread_num());
+	printf("Hello world parallel printed by thread ID: %d\n", omp_get_thread_num());
 }
