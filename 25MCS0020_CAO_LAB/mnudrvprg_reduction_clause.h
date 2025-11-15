@@ -1,9 +1,8 @@
-#include "stdio.h"
-#include "helloworld.h"
+#include"060_Data_env_reduction.h"
 #include "00_colours.h"
 #include <cstdlib>
 
-int fn_mnudrvprg_010_parallel_construct() {
+int fn_mnudrvprg_reduction_clause() {
 	int choice;
 	while (true) {
 		fn_red();
@@ -13,7 +12,7 @@ int fn_mnudrvprg_010_parallel_construct() {
 		printf("List of choices: \n\n");
 		fn_reset();
 		fn_green();
-		printf("20. Exit\t\t 21. Hello World serial program\t\t 22. Hello World parallel program\t\t 23.Both\n");
+		printf("730. Exit\t 731. Serial Dot Product(using reduction clause)       732. Parallel Dot Product(using reduction clause)\t733.Both\n");
 		fn_reset();
 		fn_red();
 		printf("************************************************************************************************************************\n");
@@ -24,26 +23,24 @@ int fn_mnudrvprg_010_parallel_construct() {
 		fn_reset();
 		switch (choice)
 		{
-		case 20: {
-			printf("\nYou opted to exit program.");
+		case 730: {
+			printf("\nYou opted to exit program.\n");
 			return 0;
 			break;
 		}
-		case 21: {
-			printf("\nThis is output of Hello World serial program.\n\n");
-			fn_helloworld_srl();
+		case 731: {
+			printf("\nThis is output of Serial Dot Product(using reduction clause) program.\n");
+			fn_run_serial_dot();
 			break;
 		}
-		case 22: {
-			printf("\nThis is output of Hello World parallel program.\n\n");
-			fn_helloworld_prl();
+		case 732: {
+			printf("\nThis is output of Parallel Dot Product(using reduction clause) program.\n");
+			fn_run_parallel_dot();
 			break;
 		}
-		case 23: {
-			printf("\nThis is output of combined Hello World serial and parallel program.\n\n");
-			fn_helloworld_srl();
-			printf("\n");
-			fn_helloworld_prl();
+		case 733: {
+			printf("\nThis is output of combined serial and parallel dot product program.\n");
+			fn_run_both_dot();
 			break;
 		}
 		default:

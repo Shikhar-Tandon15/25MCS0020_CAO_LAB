@@ -1,9 +1,10 @@
-#include "stdio.h"
-#include "helloworld.h"
+#include"mnudrvprg_shared_clause.h"
 #include "00_colours.h"
 #include <cstdlib>
+#include "mnudrvprg_critical_clause.h"
+#include "mnudrvprg_reduction_clause.h"
 
-int fn_mnudrvprg_010_parallel_construct() {
+int fn_mnudrvprg_data_env_construct() {
 	int choice;
 	while (true) {
 		fn_red();
@@ -13,7 +14,7 @@ int fn_mnudrvprg_010_parallel_construct() {
 		printf("List of choices: \n\n");
 		fn_reset();
 		fn_green();
-		printf("20. Exit\t\t 21. Hello World serial program\t\t 22. Hello World parallel program\t\t 23.Both\n");
+		printf("70. Exit\t\t 71. Shared & Private clauses\t\t 72. Critical Section\t\t 73.Reduction Clause\n");
 		fn_reset();
 		fn_red();
 		printf("************************************************************************************************************************\n");
@@ -24,26 +25,30 @@ int fn_mnudrvprg_010_parallel_construct() {
 		fn_reset();
 		switch (choice)
 		{
-		case 20: {
+		case 70: {
 			printf("\nYou opted to exit program.");
 			return 0;
 			break;
 		}
-		case 21: {
-			printf("\nThis is output of Hello World serial program.\n\n");
-			fn_helloworld_srl();
+		case 71: {
+			fn_yellow();
+			printf("\nYou choose Shared & Private clauses program\n");
+			fn_reset();
+			fn_mnudrvprg_shared_clause();
 			break;
 		}
-		case 22: {
-			printf("\nThis is output of Hello World parallel program.\n\n");
-			fn_helloworld_prl();
+		case 72: {
+			fn_yellow();
+			printf("\nYou choose Critical Section program.\n");
+			fn_reset();
+			fn_mnudrvprg_critical_sec();
 			break;
 		}
-		case 23: {
-			printf("\nThis is output of combined Hello World serial and parallel program.\n\n");
-			fn_helloworld_srl();
-			printf("\n");
-			fn_helloworld_prl();
+		case 73: {
+			fn_yellow();
+			printf("\nYou choose Reduction clause program.\n");
+			fn_reset();
+			fn_mnudrvprg_reduction_clause();
 			break;
 		}
 		default:

@@ -1,9 +1,7 @@
-#include "stdio.h"
-#include "helloworld.h"
+#include "mnudrvprg_perf_anal.h"
 #include "00_colours.h"
-#include <cstdlib>
-
-int fn_mnudrvprg_010_parallel_construct() {
+#include "mnudrvprg_for_rte_routines.h"
+int fn_mnudrvprg_runtime_routines() {
 	int choice;
 	while (true) {
 		fn_red();
@@ -13,7 +11,7 @@ int fn_mnudrvprg_010_parallel_construct() {
 		printf("List of choices: \n\n");
 		fn_reset();
 		fn_green();
-		printf("20. Exit\t\t 21. Hello World serial program\t\t 22. Hello World parallel program\t\t 23.Both\n");
+		printf("30: Exit\t\t 31. Performance Analysis\t\t 32. Runtime Environment Routines\n");
 		fn_reset();
 		fn_red();
 		printf("************************************************************************************************************************\n");
@@ -24,26 +22,23 @@ int fn_mnudrvprg_010_parallel_construct() {
 		fn_reset();
 		switch (choice)
 		{
-		case 20: {
-			printf("\nYou opted to exit program.");
+		case 30: {
+			printf("You opted to exit program.");
 			return 0;
 			break;
 		}
-		case 21: {
-			printf("\nThis is output of Hello World serial program.\n\n");
-			fn_helloworld_srl();
+		case 31: {
+			fn_yellow();
+			printf("\nYou choose Performance Analysis Program.\n");
+			fn_reset();
+			fn_mnudrvprg_perf_analysis();
 			break;
 		}
-		case 22: {
-			printf("\nThis is output of Hello World parallel program.\n\n");
-			fn_helloworld_prl();
-			break;
-		}
-		case 23: {
-			printf("\nThis is output of combined Hello World serial and parallel program.\n\n");
-			fn_helloworld_srl();
-			printf("\n");
-			fn_helloworld_prl();
+		case 32: {
+			fn_yellow();
+			printf("\nYou choose Runtime Environment Routines.\n");
+			fn_reset();
+			fn_mnudrvprg_for_rte_routines();
 			break;
 		}
 		default:

@@ -1,59 +1,89 @@
 #include "run_time_environment_routines.h"
 #include <cstdlib>
-void fn_mnudrvprg_for_rte_routines() {
+#include "00_colours.h"
+
+int fn_mnudrvprg_for_rte_routines() {
 	int choice;
 	while (true) {
-		printf("###########################################\n");
-		printf("List of choices: \n");
-		printf("0: Exit\t 1. omp_set_num_threads()\t 2. omp_get_num_threads()\t 3. omp_get_max_threads()\t 4. omp_get_thread_num()\t 5. omp_get_num_procs()\t 6. omp_in_parallel()\t 7. omp_set_dynamic()\t 8. omp_get_dynamic()\t 9. omp_set_nested()\t 10. omp_get_nested()  \n\n");
-		printf("###########################################\n");
+		fn_red();
+		printf("************************************************************************************************************************\n");
+		fn_reset();
+		fn_cyan();
+		printf("List of choices: \n\n");
+		fn_reset();
+		fn_green();
+		printf("%-6s %-30s %-30s %-30s\n",
+			"","320. Exit",
+			"321. omp_set_num_threads()",
+			"322. omp_get_num_threads()");
 
+		printf("%-6s %-30s %-30s %-30s\n",
+			"", "323. omp_get_max_threads()",
+			"324. omp_get_thread_num()",
+			"325. omp_get_num_procs()");
+
+		printf("%-6s %-30s %-30s %-30s\n",
+			"", "326. omp_in_parallel()",
+			"327. omp_set_dynamic()",
+			"328. omp_get_dynamic()");
+
+		printf("%-6s %-30s %-30s\n",
+			"", "329. omp_set_nested()",
+			"330. omp_get_nested()");
+		fn_reset();
+		fn_red();
+		printf("************************************************************************************************************************\n");
+		fn_reset();
+		fn_cyan();
 		printf("Enter your choice: \n");
 		scanf_s("%d", &choice);
+		fn_reset();
 
 		switch (choice)
 		{
-		case 0: {
-			printf("You opted to exit program. \n");
-			exit(0);
+		case 320: {
+			printf("\nYou opted to exit program.\n");
+			return 0;
+			break;
+			
 		}
-		case 1: {
+		case 321: {
 			fn_rter_omp_set_num_threads();
 			break;
 		}
-		case 2: {
+		case 322: {
 			fn_rter_omp_get_num_threads();
 			break;
 		}
-		case 3: {
+		case 323: {
 			fn_rter_omp_get_max_threads();
 			break;
 		}
-		case 4: {
+		case 324: {
 			fn_rter_omp_get_thread_num();
 			break;
 		}
-		case 5: {
+		case 325: {
 			fn_rter_omp_get_num_procs();
 			break;
 		}
-		case 6: {
+		case 326: {
 			fn_rter_omp_in_parallel();
 			break;
 		}
-		case 7: {
+		case 327: {
 			fn_rter_omp_set_dynamic();
 			break;
 		}
-		case 8: {
+		case 328: {
 			fn_rter_omp_get_dynamic();
 			break;
 		}
-		case 9: {
+		case 329: {
 			fn_rter_omp_set_nested();
 			break;
 		}
-		case 10: {
+		case 330: {
 			fn_rter_omp_get_nested();
 			break;
 		}

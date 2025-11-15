@@ -1,9 +1,8 @@
-#include "stdio.h"
-#include "helloworld.h"
+#include"060_Data_env_critical.h"
 #include "00_colours.h"
 #include <cstdlib>
 
-int fn_mnudrvprg_010_parallel_construct() {
+int fn_mnudrvprg_critical_sec() {
 	int choice;
 	while (true) {
 		fn_red();
@@ -13,7 +12,7 @@ int fn_mnudrvprg_010_parallel_construct() {
 		printf("List of choices: \n\n");
 		fn_reset();
 		fn_green();
-		printf("20. Exit\t\t 21. Hello World serial program\t\t 22. Hello World parallel program\t\t 23.Both\n");
+		printf("720. Exit\t 721. Serial Dot Product(using critical section)       722. Parallel Dot Product(using critical section)\t723.Both\n");
 		fn_reset();
 		fn_red();
 		printf("************************************************************************************************************************\n");
@@ -24,26 +23,24 @@ int fn_mnudrvprg_010_parallel_construct() {
 		fn_reset();
 		switch (choice)
 		{
-		case 20: {
-			printf("\nYou opted to exit program.");
+		case 720: {
+			printf("\nYou opted to exit program.\n");
 			return 0;
 			break;
 		}
-		case 21: {
-			printf("\nThis is output of Hello World serial program.\n\n");
-			fn_helloworld_srl();
+		case 721: {
+			printf("\nThis is output of Serial Dot Product(using critical section) program.\n");
+			fn_run_dot_prod_serial();
 			break;
 		}
-		case 22: {
-			printf("\nThis is output of Hello World parallel program.\n\n");
-			fn_helloworld_prl();
+		case 722: {
+			printf("\nThis is output of Parallel Dot Product(using critical section) program.\n");
+			fn_run_dot_prod_parallel();
 			break;
 		}
-		case 23: {
-			printf("\nThis is output of combined Hello World serial and parallel program.\n\n");
-			fn_helloworld_srl();
-			printf("\n");
-			fn_helloworld_prl();
+		case 723: {
+			printf("\nThis is output of combined serial and parallel dot product program.\n");
+			fn_run_dot_prod_both();
 			break;
 		}
 		default:

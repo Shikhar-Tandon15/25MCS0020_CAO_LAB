@@ -151,7 +151,16 @@
     <ClInclude Include="mnudrvprg_020_runtime_environment_routines.h" />
     <ClInclude Include="mnudrvprg_030_for_worsharing_construct.h" />
     <ClInclude Include="mnudrvprg_050_scheduling.h" />
+    <ClInclude Include="mnudrvprg_critical_clause.h" />
+    <ClInclude Include="mnudrvprg_reduction_clause.h" />
+    <ClInclude Include="mnudrvprg_shared_clause.h" />
+    <ClInclude Include="mnudrvprg_for_bakery.h" />
+    <ClInclude Include="mnudrvprg_for_card_game.h" />
     <ClInclude Include="mnudrvprg_for_rte_routines.h" />
+    <ClInclude Include="mnudrvprg_num_square.h" />
+    <ClInclude Include="mnudrvprg_perf_anal.h" />
+    <ClInclude Include="mnudrvprg_runtime_routines.h" />
+    <ClInclude Include="mnudrvprog_data_env_construct.h" />
     <ClInclude Include="weather_data_analyser.h" />
     <ClInclude Include="ret_et_helloworld.h" />
     <ClInclude Include="performance_analysis.h" />

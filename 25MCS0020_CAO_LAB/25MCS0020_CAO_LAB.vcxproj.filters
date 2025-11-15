@@ -95,5 +95,32 @@
     <ClInclude Include="060_data_env_reduction.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="mnudrvprg_runtime_routines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mnudrvprg_perf_anal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mnudrvprg_num_square.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mnudrvprg_for_card_game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mnudrvprg_for_bakery.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mnudrvprg_shared_clause.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mnudrvprog_data_env_construct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mnudrvprg_critical_clause.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mnudrvprg_reduction_clause.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

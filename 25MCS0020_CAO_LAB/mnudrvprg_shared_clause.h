@@ -1,9 +1,8 @@
-#include "stdio.h"
-#include "helloworld.h"
+#include"060_Data_env_constructs.h"
 #include "00_colours.h"
 #include <cstdlib>
 
-int fn_mnudrvprg_010_parallel_construct() {
+int fn_mnudrvprg_shared_clause() {
 	int choice;
 	while (true) {
 		fn_red();
@@ -13,7 +12,7 @@ int fn_mnudrvprg_010_parallel_construct() {
 		printf("List of choices: \n\n");
 		fn_reset();
 		fn_green();
-		printf("20. Exit\t\t 21. Hello World serial program\t\t 22. Hello World parallel program\t\t 23.Both\n");
+		printf("710. Exit\t\t 711. Serial Vector Addition\t\t 712. Parallel Vector Addition\t\t 713.Both\n");
 		fn_reset();
 		fn_red();
 		printf("************************************************************************************************************************\n");
@@ -24,26 +23,24 @@ int fn_mnudrvprg_010_parallel_construct() {
 		fn_reset();
 		switch (choice)
 		{
-		case 20: {
+		case 710: {
 			printf("\nYou opted to exit program.");
 			return 0;
 			break;
 		}
-		case 21: {
-			printf("\nThis is output of Hello World serial program.\n\n");
-			fn_helloworld_srl();
+		case 711: {
+			printf("\nThis is output of Serial Vector Addition program.\n");
+			fn_run_shared_serial();
 			break;
 		}
-		case 22: {
-			printf("\nThis is output of Hello World parallel program.\n\n");
-			fn_helloworld_prl();
+		case 712: {
+			printf("\nThis is output of Parallel Vector Addition program.\n");
+			fn_run_shared_parallel();
 			break;
 		}
-		case 23: {
-			printf("\nThis is output of combined Hello World serial and parallel program.\n\n");
-			fn_helloworld_srl();
-			printf("\n");
-			fn_helloworld_prl();
+		case 713: {
+			printf("\nThis is output of combined serial and parallel vector addition program.\n");
+			fn_run_shared_both();
 			break;
 		}
 		default:
